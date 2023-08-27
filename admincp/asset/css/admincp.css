@@ -1,0 +1,31 @@
+#main-admin{
+	width: 60%;
+	margin: 20px auto;
+}
+.title{
+	text-align: center;
+}
+.content{
+	margin: 15px auto;
+    width: 400px;
+    text-align: center;
+}
+.phanquanly{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	margin: 30px auto;
+}
+.noidungquanly{
+	border: 1px solid black;
+	border-radius: 7px;
+	padding: 8px 15px;
+	margin: 7x auto;
+	background: #00e6ac;
+	min-width: 200px;
+	font-size: large;
+}
+.click{
+	padding: 8px 15px;
+	margin: 7x 10px;
+}

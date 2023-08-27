@@ -1,0 +1,15 @@
+RewriteEngine On
+RewriteRule "home.html" "index.php"
+RewriteRule "dangky.html" "dangky.php"
+RewriteRule "dangnhap.html" "dangnhap.php"
+RewriteRule "lienhe.html" "lienhe.php"
+RewriteRule "^([a-zA-Z0-9]+).html$" "index.php?module=$1"
+RewriteRule "^danh-sach-san-pham&page=([0-9]+)$" "index.php?module=tatcasanpham&page=$1"
+RewriteRule "^san-pham-([0-9]+)=([a-zA-Z0-9-]+)$" "index.php?module=sanpham&id=$1&urlsanpham=$2"
+RewriteRule "^danh-muc-([0-9]+)=([a-zA-Z0-9-]+)$" "index.php?module=sanphamtheodanhmuc&id_danhmuc=$1&urldanhmuc=$2"
+RewriteRule "^cong-them-so-luong&id=([0-9]+)$" "index.php?module=thaydoisoluong&act=cong&id=$1"
+RewriteRule "^tru-bot-so-luong&id=([0-9]+)$" "index.php?module=thaydoisoluong&act=tru&id=$1"
+RewriteRule "^xoa-san-pham&id=([0-9]+)$" "index.php?module=xoasanphamgiohang&id_sanpham=$1"
+RewriteRule "^don-hang-([a-zA-Z0-9-_]+)$" "index.php?module=donhang&madonhang=$1"
+RewriteRule "^profile-([a-zA-Z0-9-_]+)$" "index.php?module=profile&user=$1"
+
